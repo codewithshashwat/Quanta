@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quanta Chatbot</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'quanta_app/css/style.css' %}">
+</head>
+<body>
+    <div class="chat-container">
+        <header class="chat-header">
+            <h1>Quanta Chatbot</h1>
+        </header>
+
+        <div class="chat-box" id="chat-box">
+            </div>
+
+        <form id="chat-form" class="chat-input-form">
+            <input type="text" id="user-input" placeholder="Type your message..." autofocus>
+            <button type="submit">Send</button>
+        </form>
+    </div>
+
+    <script src="{% static 'quanta_app/js/chat.js' %}"></script>
+</body>
+</html>
